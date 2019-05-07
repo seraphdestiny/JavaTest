@@ -1,5 +1,5 @@
 package ntou.cs.java2019.hw3;
-
+///ver 3
 import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.IntStream;
