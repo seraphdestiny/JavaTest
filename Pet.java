@@ -1,4 +1,4 @@
-package ntou.cs.java.rpg;
+package ntou.cs.java2019.hw3;
 
 import java.util.Random;
 
@@ -13,5 +13,9 @@ public class Pet implements ATK
 			this.maxAttack = maxAttack;
 		}	
 	}
-
+	@Override
+	public double attack() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

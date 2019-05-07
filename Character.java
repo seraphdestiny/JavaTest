@@ -1,4 +1,4 @@
-package ntou.cs.java.rpg;
+package ntou.cs.java2019.hw3;
 
 import java.util.ArrayList;
 
@@ -13,16 +13,23 @@ public class Character
 
 	public Character ()
 	{
+		setHp(DEFAULT_HP);		
+		//this.equipment.add(ATK);		
 	}
 
 	public Character (double hp)
 	{
+		setHp(hp);	
+		Weapon w;
+		w = new NormalWeapon(0,0);
+		equipment.add(w);
 	}
+	
 
 	public Character (double hp, ArrayList<ATK> equipment)
 	{
 		setHp(hp);
-		this.equipment = equipment;
+		setequipment(equipment);
 	}
 
 	public double getHp ()
