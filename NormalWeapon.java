@@ -8,8 +8,7 @@ public class NormalWeapon extends Weapon{
 
 	@Override
 	public double attack() {
-		// TODO Auto-generated method stub
-		return 0;
+		return super.getOffense();
 	}
 
 }

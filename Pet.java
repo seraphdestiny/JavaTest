@@ -5,6 +5,7 @@ import java.util.Random;
 public class Pet implements ATK
 {
 	int maxAttack;
+	private Random random;
 	
 	public Pet (int maxAttack)
 	{
@@ -13,9 +14,21 @@ public class Pet implements ATK
 			this.maxAttack = maxAttack;
 		}	
 	}
+	
+	public int getMaxAttack() {
+		return this.maxAttack;
+	}
+	
+	@Override
+	public String toString ()
+	{
+		return "Pet [maxAttack=" + maxAttack +"]";
+	}	
+	
 	@Override
 	public double attack() {
-		// TODO Auto-generated method stub
-		return 0;
+		random = new Random();
+		int attack = (int)(1 + (random.nextFloat() * maxAttack));	// 1 ~ maxAttack
+		return attack;
 	}
 }

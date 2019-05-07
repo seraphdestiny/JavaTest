@@ -13,15 +13,17 @@ public class Character
 
 	public Character ()
 	{
+		//set default HP and default ATK
 		setHp(DEFAULT_HP);		
-		//this.equipment.add(ATK);		
+		Weapon w = new NormalWeapon(DEFAULT_ATK,0);
+		equipment.add(w);		
 	}
 
 	public Character (double hp)
 	{
+		//set default HP
 		setHp(hp);	
-		Weapon w;
-		w = new NormalWeapon(0,0);
+		Weapon w = new NormalWeapon(DEFAULT_ATK,0);
 		equipment.add(w);
 	}
 	
